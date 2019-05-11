@@ -1,0 +1,23 @@
+{
+    "compilerOptions": {
+        "target": "es2015",
+        "lib": [
+            "es2018"
+        ],
+        "module": "commonjs", // Compatible with both Node.js and browser
+        "moduleResolution": "node", // Tell tsc to look in node_modules for modules
+        "sourceMap": true, // Creates *.js.map files
+        "strict": true, // Strict types, eg. prohibits `var x=0; x=null`
+        "alwaysStrict": true, // Enable JavaScript's "use strict" mode
+        "outDir": "./lib/",
+        "experimentalDecorators": true,
+        "noImplicitAny": true,
+        "strictNullChecks": true,
+    },
+    "include": [
+        "src/**/*"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
+}

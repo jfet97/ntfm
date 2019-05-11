@@ -1,0 +1,23 @@
+{
+  "name": "ntfm",
+  "version": "0.0.11",
+  "description": "A node telegram bots flow manager",
+  "keywords": ["telegram", "node", "js", "javascript", "flow", "manager", "async", "bot", "api"],
+  "scripts": {
+    "test": "jasmine-ts --config=jasmine.json"
+  },
+  "author": "Andrea Simone Costa <andrysimo1997@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jasmine": "^3.3.12",
+    "@types/node": "^12.0.0",
+    "jasmine": "^3.4.0",
+    "jasmine-ts": "^0.3.0",
+    "ts-node": "^8.1.0",
+    "typescript": "^3.4.5"
+  },
+  "main": "lib/index.js",
+  "files": [
+    "lib"
+  ]
+}

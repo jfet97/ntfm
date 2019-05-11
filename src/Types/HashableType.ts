@@ -1,0 +1,1 @@
+export type Hashable = number | string;
