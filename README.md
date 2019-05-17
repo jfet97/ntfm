@@ -121,5 +121,5 @@ bot.onCommand('clear', function commandListener(message) {
 
 ## Credits
 
-Thanks to [Alexander Cerutti](https://github.com/alexandercerutti) for his work on this topic. **Node Telegram Bots FLow Manager** is a simplified and enhanced reimplementation, with correct handling of asynchronous actions, of his [node-telegram-operation-manager
+Thanks to [Alexander Cerutti](https://github.com/alexandercerutti) for his work on this topic. **Node Telegram Bots Flow Manager** is a simplified and enhanced reimplementation, with correct handling of asynchronous actions, of his [node-telegram-operation-manager
 ](https://github.com/alexandercerutti/node-telegram-operation-manager).

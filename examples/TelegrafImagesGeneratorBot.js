@@ -16,6 +16,9 @@ bot.command("generate", ctx => {
     // flow guard
     if (!flow.hasInQueue(userId)) {
 
+        // after 180 second, the operation will be forcibly cleared
+        const timer = setTimeout(flow.clear.bind(flow), 180000, userId);
+
         // the bot will reply to the /generate bot_command asking the first parameter to generate the image: the width
         ctx.reply(`Send me the width of the image to be generated`);
 
@@ -174,15 +177,17 @@ bot.command("generate", ctx => {
                     await fetch(url);
                     // send the image to the user
                     ctx.telegram.sendDocument(ctx.message.chat.id, url)
+
+                    // everything went fine, we should remove the timeout
+                    // to avoid interferences with future actions registrations
+                    clearTimeout(timer);
+
                 } catch (e) {
                     ctx.reply(`Something went wrong in the generation process: type anything to retry or send /clear to abort`);
                     return { repeat: true };
                 }
             }
         );
-
-        // after 60 second, the operation will be forcibly cleared
-        setTimeout(flow.clear.bind(flow), 180000, userId);
 
     } else {
         ctx.reply("Unable to execute this command. First complete the previous operation or type /clear.");
