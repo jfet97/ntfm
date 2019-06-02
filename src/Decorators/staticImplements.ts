@@ -1,6 +1,6 @@
 // class decorator factory to check static side against a constructor interface
-export function staticImplements<WANTED_CONSTRUCTOR_TYPE>() {
+export function staticImplements<WANTED>() {
     return (
-        <CHECKED_CONSTRUCTOR_TYPE extends WANTED_CONSTRUCTOR_TYPE>(constructor: CHECKED_CONSTRUCTOR_TYPE): CHECKED_CONSTRUCTOR_TYPE => constructor
+        <TO_CHECK extends WANTED>(constructor: TO_CHECK): TO_CHECK => constructor
     );
 }
