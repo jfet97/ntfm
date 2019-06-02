@@ -11,8 +11,6 @@
         "alwaysStrict": true, // Enable JavaScript's "use strict" mode
         "outDir": "./lib/",
         "experimentalDecorators": true,
-        "noImplicitAny": true,
-        "strictNullChecks": true,
     },
     "include": [
         "src/**/*"

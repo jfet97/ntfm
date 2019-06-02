@@ -2,7 +2,17 @@
   "name": "ntfm",
   "version": "0.0.11",
   "description": "A node telegram bots flow manager",
-  "keywords": ["telegram", "node", "js", "javascript", "flow", "manager", "async", "bot", "api"],
+  "keywords": [
+    "telegram",
+    "node",
+    "js",
+    "javascript",
+    "flow",
+    "manager",
+    "async",
+    "bot",
+    "api"
+  ],
   "scripts": {
     "test": "jasmine-ts --config=jasmine.json"
   },
