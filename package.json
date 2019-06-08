@@ -1,6 +1,6 @@
 {
   "name": "ntfm",
-  "version": "0.0.11",
+  "version": "0.0.12",
   "description": "A node telegram bots flow manager",
   "keywords": [
     "telegram",
@@ -27,7 +27,7 @@
     "typescript": "^3.4.5"
   },
   "main": "lib/index.js",
-  "types": "./lib/index.d.ts",
+  "types": "lib/index.d.ts",
   "files": [
     "lib"
   ]
